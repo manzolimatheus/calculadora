@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora</title>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/lg/57/pocket-calculator_1f5a9.png "
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <div id="app" class="container">
+      <h1>🔢 Calculadora</h1>
+      <input type="text" readonly v-model="valor_visor" />
+
+      <div class="button-group">
+        <button @click="Adicionar('(')">(</button>
+        <button @click="Adicionar(')')">)</button>
+        <button @click="Raiz">√</button>
+        <button class="botao-operacao" @click="Adicionar('-')">-</button>
+        <button @click="Adicionar('7')">7</button>
+        <button @click="Adicionar('8')">8</button>
+        <button @click="Adicionar('9')">9</button>
+        <button class="botao-operacao" @click="Adicionar('/')">/</button>
+        <button @click="Adicionar('4')">4</button>
+        <button @click="Adicionar('5')">5</button>
+        <button @click="Adicionar('6')">6</button>
+        <button class="botao-operacao" @click="Adicionar('*')">*</button>
+        <button @click="Adicionar('1')">1</button>
+        <button @click="Adicionar('2')">2</button>
+        <button @click="Adicionar('3')">3</button>
+        <button class="botao-operacao" @click="Adicionar('+')">+</button>
+        <button @click="Adicionar('0')">0</button>
+        <button id="button_clear" @click="Limpar">C</button>
+        <button id="button_submit" @click="Calcular">=</button>
+        <button @click="Adicionar('.')" class="botao-operacao">.</button>
+        
+      </div>
+
+      <footer>
+        <p id="owner">Feito por @manzolimatheus - {{AnoAtual}}</p>
+        <a href="https://github.com/manzolimatheus">
+          <img
+            src="https://image.flaticon.com/icons/png/512/25/25231.png"
+            alt="Github Icon"
+            class="github_icon"
+          />
+        </a>
+      </footer>
+    </div>
+  </body>
+</html>

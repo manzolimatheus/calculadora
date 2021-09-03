@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+body {
+  background-color: lightblue;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.container {
+  background-color: #3d3939;
+  width: 50%;
+  color: white;
+  padding: 3%;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.button-group {
+  margin-top: 10px;
+}
+
+#button_clear {
+  background-color: tomato;
+}
+
+#button_clear:hover {
+  background-color: rgb(209, 85, 63);
+}
+
+#button_submit {
+  background-color: #6dcc9d;
+}
+
+#button_submit:hover {
+  background-color: #69af8c;
+}
+
+button {
+  border: 0;
+  padding: 3%;
+  background-color: #00ccff;
+  border-radius: 10px;
+  color: white;
+  width: 20%;
+  margin: 1px;
+  font-size: 18pt;
+}
+
+button:hover {
+  background-color: #00b2df;
+}
+
+.botao-operacao {
+  background-color: orange;
+}
+
+.botao-operacao:hover {
+  background-color: #c58b1f;
+}
+
+.img_destaque {
+  text-align: center;
+  width: 400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+input {
+  font-size: xx-large;
+  width: 100%;
+  text-align: center;
+}
+
+#owner {
+  margin-top: 10%;
+}
+
+.github_icon {
+  width: 30px;
+  filter: invert(1) brightness(1);
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+
+  .img_destaque {
+    width: 100%;
+  }
+}
